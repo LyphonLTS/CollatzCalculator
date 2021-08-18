@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Collaz </title>
+
+    <!-- Imports of css configs || importação de estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/high.css">
+</head>
+
+<body>
+
+    <div class="background"><!-- Div background controller -->
+
+        <div class="container"><!-- Div group for main itens -->
+
+            <div class="titleContainer"><!-- title group -->
+
+                <h1> Bem vindo a calculadora de Collaz! </h1>
+
+            </div>
+    
+            <div class="mainContainer"><!-- main group -->
+
+                <span>Insira um valor: </span>
+                <input type="number" id="valEnter" onkeyup="verify()">
+
+            </div>
+            
+            <div class="buttonContainer"><!-- submit group -->
+
+                <button id="btn" disabled> Calcular </button>
+
+            </div>
+
+        </div>
+
+        <div class="modalBackground" id="modal"><!-- Div modal background controller -->
+
+            <div class="modalContainer" id="modalContainer"><!-- Div group for modal main itens -->
+
+                <div class="closeContainer"><!-- close button group -->
+
+                    <button id="close"> < </button>
+
+                </div>
+
+                <div class="itensContainer"><!-- info group || show itens from array -->
+
+                    <div class="modalResult">
+
+                        <h2> Itens: </h2>
+                        <p id="itens"></p>
+                        
+                    </div>
+                
+                </div>
+
+                <div class="resultContainer"><!-- info group || show the entire array -->
+
+                    <div class="modalResult">
+
+                        <h2> Resultado: </h2>
+                        <p id="result"></p>
+                        
+                    </div>
+
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <!-- Imports of js configs || importação das funções js -->
+    <script src="js/verify.js"></script>
+    <script src="js/controlCollaz.js"></script>
+    <script src="js/controlPopup.js"></script>
+    <script src="js/collaz.js"></script>
+    <script src="js/popup.js"></script>
+
+</body>
+</html>

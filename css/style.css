@@ -1,0 +1,229 @@
+/* import section */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* keyframes section */
+    @keyframes modal {
+        from {
+            opacity: 0;
+
+            transform: translate3d(0, -60px, 0);
+        }
+
+        to {
+            opacity: 1;
+
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+/* style section */
+    * {
+        margin: 0;
+        border: 0;
+        border-style: none;
+
+        font-style: none;  
+    }
+
+    .background {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #939F5C;
+    }
+
+    .container {
+        width: 80%;
+        height: 80%;
+
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+
+        border-radius: 8px;
+
+        background-color: #BBCE8A;
+    }
+
+    .titleContainer {
+        width: 80%;
+        height: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translate(0, 50%);   
+    }
+
+    .titleContainer h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        color: #313715;
+    }
+
+    .mainContainer {
+        width: 80%;
+        height: 150px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translate(0, 50%);   
+    }
+
+    .mainContainer span {
+        width: 20%;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        color: #313715;
+    }
+
+    input {
+        width: 40%;
+        height: 25px;
+
+        border: none;
+        border-bottom: 1px solid #313715;
+
+        outline: none;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #313715;
+
+        background-color: transparent;        
+    }
+
+    .buttonContainer {
+        width: 80%;
+        height: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translate(0, 100%);  
+    }
+
+    button {
+        width: 125px;
+        height: 50px;
+        
+        border: 2px solid #D16014;
+        border-radius: 40px;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #F8CFB4;
+        background-color: #E06615;
+
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #EC7C32;
+        color: #F8CFB4;
+    }
+
+    .modalBackground {
+        width: 100vw;
+        height: 100vh;
+
+        position: fixed;
+        top: 0px;
+        left: 0px;
+
+        z-index: 2000;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #BBCE8A;
+    }
+
+    .modalBackground.mostrar {
+        display: flex;
+    }
+
+    .modalContainer {
+        width: 80%;
+        height: 90%;
+    }
+
+    .mostrar .modalContainer {
+        animation: modal .3s;
+    }
+
+    .modalResult {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .modalResult h2{
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        color: #313715;
+    }
+
+    .modalResult p{
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        color: #313715;
+    }   
+
+    .resultContainer {
+        width: 80%;
+        height: auto;
+    }
+
+    .itensContainer {
+        width: 80%;
+        height: auto;
+    }
+
+    .closeContainer {
+        width: 50px;
+        height: 50px;
+
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #close {
+        width: 50px;
+        height: 50px;
+        
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+
+        cursor: pointer;
+    }

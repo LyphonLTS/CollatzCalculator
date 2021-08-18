@@ -1,0 +1,12 @@
+/* medium screen section */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .modalResult h2 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+
+    .modalResult p {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,33 @@
+/* mobile screen section */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .mainContainer span {
+        width: auto;
+
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    .modalContainer {
+        max-height: 400px;
+
+        flex-direction: column;
+    }
+
+    .modalResult {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}

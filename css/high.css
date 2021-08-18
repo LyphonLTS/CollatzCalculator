@@ -1,0 +1,61 @@
+/* medium/high screen section */
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .titleContainer {
+        transform: translate(0, 150%);
+    }
+
+    .titleContainer h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+
+    .mainContainer {
+        transform: translate(0, 150%);
+    }
+
+    .mainContainer span {
+        width: 30%;
+        
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    input {
+        width: 50%;
+
+        font-size: 30px;
+    }
+
+    .buttonContainer {
+        transform: translate(0, 300%);
+    }
+
+    button {
+        width: 225px;
+        height: 75px;
+
+        font-size: 30px;
+    }
+
+    .modalResult h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .modalResult p{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .resultContainer {
+        transform: translate(0, 100%);
+    }
+
+    .itensContainer {
+        transform: translate(0, 200%);
+    }
+
+    .closeContainer {
+        transform: translate(0, 300%);
+    }
+}
